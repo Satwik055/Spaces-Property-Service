@@ -4,4 +4,4 @@
 
 azure-functions
 flask
-supabase
+psycopg2-binary
