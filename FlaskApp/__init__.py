@@ -61,7 +61,7 @@ def get_property_by_id(property_id):
     
 @app.route('/hello', methods=['GET'])
 def hello():
-    return "Hello World !"
+    return "Hello World Jalzeera !"
 
 
 
