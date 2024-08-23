@@ -42,7 +42,6 @@ def get_properties_by_type():
     except Exception as e:
         return jsonify({"error": str(e)}), 500
 
-
 @app.route('/v1/property/<int:property_id>', methods=['GET'])
 def get_property_by_id(property_id):
     try:
@@ -59,6 +58,11 @@ def get_property_by_id(property_id):
 
     except Exception as e:
         return jsonify({"error": str(e)}), 500
+    
+@app.route('/hello', methods=['GET'])
+def hello():
+    return "Hello World"
+
 
 
 if __name__ == '__main__':
