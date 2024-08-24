@@ -16,7 +16,7 @@ connection = psycopg2.connect(**DB_CONFIG)
 cursor = connection.cursor()
 app = Flask(__name__)
 
-property_types = ["workspace", "lounge"]
+property_types = ["WORKSPACE", "LOUNGE"]
 
 
 @app.route('/v1/property', methods=['GET'])
