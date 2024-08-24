@@ -39,7 +39,8 @@ def get_properties_by_type():
         else:
             columns = [desc[0] for desc in cursor.description]
             response_dict = dict(zip(columns, response))
-            return jsonify(response_dict)
+            properties = [response_dict]
+            return jsonify(properties)
 
     except Exception as e:
         return jsonify({"error": str(e)}), 500
