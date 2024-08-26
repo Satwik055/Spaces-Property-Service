@@ -3,7 +3,7 @@ import psycopg2
 
 
 # https://spaces-property-service.azurewebsites.net/v1/property/3
-
+# https://spaces.azure-api.net/spaces-property-service/v1/property/3
 
 DB_CONFIG = {
     'host': "aws-0-ap-south-1.pooler.supabase.com",
@@ -66,7 +66,7 @@ def get_property_by_id(property_id):
 
 @app.route('/hello', methods=['GET'])
 def hello():
-    return "Hello World"
+    return "Hello World from property service"
 
 
 if __name__ == '__main__':
