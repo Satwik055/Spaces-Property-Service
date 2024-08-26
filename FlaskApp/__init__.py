@@ -19,7 +19,7 @@ app = Flask(__name__)
 property_types = ["WORKSPACE", "LOUNGE"]
 
 
-@app.route('/v1/property', methods=['GET'])
+@app.route('/v1/properties', methods=['GET'])
 def get_properties_by_type():
     property_type = request.args.get('type')
 
